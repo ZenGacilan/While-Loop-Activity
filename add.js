@@ -5,9 +5,9 @@ function numberGuess() {
   while (guess !== secretNumber) {
     guess = parseInt(prompt("Guess a number between 1 and 10:"));
 
-    if (guess < 1) {
+    if (guess < secretNumber) {
       console.log("Too low, try again.");
-    } else if (guess > 10) {
+    } else if (guess > secretNumber) {
       console.log("Too high, try again.");
     } else {
       console.log("Congratulations! You guessed the correct number.");
